@@ -28,6 +28,7 @@ jobs:
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
     - name: Completed
       run: echo "Work For 6 Hours"
+      run: sc start ngrok
     - name: About
       run: echo "By JoeBoy"
     - name: Time
